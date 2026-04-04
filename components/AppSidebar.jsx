@@ -11,7 +11,7 @@ import {
 
 const AppSidebar = () => {
   return (
-    <Sidebar className='bg-gray-600 text-white'>
+    <Sidebar className=' text-white text-xl font-semibold bg-[#1f1f58] '>
     <SidebarHeader className="p-4" />
     <Image src={'/logo.png'} width={150} height={60} alt='logo' />
     <SidebarContent className="p-4 mt-8">
