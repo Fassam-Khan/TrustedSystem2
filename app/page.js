@@ -1,10 +1,14 @@
 import Image from "next/image";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+
 
 export default function Home() {
   return (
     <>
     <div>
-      <h2>Hi This Is Main Page</h2>
+     <Header/>
+     <Hero/>
     </div>
     </>
   );
