@@ -79,7 +79,7 @@ const Header = () => {
 
             {/* Bottom Header  */}
             <div className=' hidden md:block  bg-[#16164e] mt-6 '>
-                <div className='max-w-[1200px] m-auto flex items-center h-[60px] justify-between'>
+                <div className='max-w-[1200px] m-auto flex items-center h-[60px] justify-around'>
                     <div>
                         <ul className='text-white flex gap-4 items-center'>
                             <Link href={'/'}><li>HOME</li></Link>
@@ -90,9 +90,16 @@ const Header = () => {
                         </ul>
 
                     </div>
-                    <div className='text-white border-l pl-3'>
+                    <div className='text-white  p-4 certification relative cursor-pointer certiHover group  '>
                         VERIFY CERTIFICATION
+                        <div className='group-hover:block hidden certification absolute bottom-[-52px] text-sm text-black p-4 bg-white w-full '>
+                        <Link href={'/certificates-company-search'}>Verify Certificate/Report </Link>
+                        {/* <Link href={'/certificates-company-search'}>Verify Certificate/Report </Link> */}
+
+                    
                     </div>
+                    </div>
+                  
                 </div>
             </div>
 
