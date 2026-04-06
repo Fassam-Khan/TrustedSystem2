@@ -118,118 +118,122 @@ const SearchCerti = () => {
 
 
       {/* Result Card  */}
-      <div className='cerificate-content bg-[#f1f1f1] md:w-[1200px] rounded-2xl md:p-10 p-4'>
-        {/* Heading  */}
-        <div className='flex justify-center '>
-          <h2 className='text-3xl font-bold'>Verify Certificate</h2>
-        </div>
-        {/* Main Data  */}
-        <div className='flex flex-col gap-4 mt-4'>
-          {/* Data  */}
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Certificate Number:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+      {result && (
+            <div className='cerificate-content bg-[#f1f1f1] md:w-[1200px] rounded-2xl md:p-10 p-4 '>
+            {/* Heading  */}
+            <div className='flex justify-center '>
+              <h2 className='text-3xl font-bold'>Verify Certificate</h2>
+            </div>
+            {/* Main Data  */}
+            <div className='flex flex-col gap-2 mt-8'>
+              {/* Data  */}
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Certificate Number:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.certificateNum || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Date Of Initial Registration:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.initialRegistration || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Date Of Issue:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.dateOfIssue || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Date Of Expiry:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.dateOfExpiry || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Recertification Due Date</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.recertificationDue || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>  
+              <div>
+                <h4 className='text-lg font-bold'>Country:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.country || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Standard</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.standard || "- "}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Organization:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.organization || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Address:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.address || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Scope:</h4>
+              </div>
+              <div>
+                <p className='text-gray-800'>{result?.scope || '—'}</p>
+              </div>
+    
+            </div>
+            <div className=' flex justify-between '>
+              <div>
+                <h4 className='text-lg font-bold'>Status:</h4>
+              </div>
+              <div>
+                <p className={result?.status === "valid" ? "text-white font-semibold text-sm bg-[#198754] rounded-3xl pl-2 pt-1 pb-1 pr-2 " : "text-red-600"}>{result?.status.toUpperCase() || '—'}</p>
+              </div>
+    
+            </div>
+    
+            </div>                                                                          
+           
+    
           </div>
 
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Date Of Initial Registration:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Date Of Issue:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Date Of Expiry:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Recertification Due Date</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>  
-          <div>
-            <h4 className='text-lg font-bold'>Country:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Standard</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Organization:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Address:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Scope:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-        <div className=' flex justify-between '>
-          <div>
-            <h4 className='text-lg font-bold'>Status:</h4>
-          </div>
-          <div>
-            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
-          </div>
-
-        </div>
-
-        </div>
-       
-
-      </div>
+      )}
+  
 
     </div>
   )
