@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebook, TextAlignEnd, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaBars ,FaYoutube, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MobileMenue } from './MobileMenue';
 
 
 const Header = () => {
@@ -40,7 +41,7 @@ const Header = () => {
             <div className=' hidden md:block  wrapper max-w-[1200px] m-auto mt-4'>
                 <div className="middle-head flex items-center">
                     <div>
-                        <Image src='/logo.png' alt='logo' width={150} height={50} />
+                        <Link href={'/'}><Image src='/logo.png' alt='logo' width={150} height={50} /></Link>
                     </div>
                     <div className='ml-25 flex gap-14'>
                         {/* Boxes  */}
@@ -104,18 +105,20 @@ const Header = () => {
             </div>
 
             {/* Mobile Header  */}
-            <div className='md:hidden pl-6 pr-6 mt-4 flex justify-between items-center'>
+            <div className='md:hidden pl-6 pr-6 mt-4 flex justify-between items-center h-[90px]'>
                 <div>
                 <Image src='/logo.png' width={150} height={50} alt='logo' />
 
                 </div>
+                <div className=''>
+                <MobileMenue/>
+
+            </div>
                
 
             </div>
 
-            <div className='bg-black'>
-
-            </div>
+          
 
 
 
