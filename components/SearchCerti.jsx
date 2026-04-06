@@ -38,8 +38,8 @@ const SearchCerti = () => {
   }
 
   return (
-    <div className='flex flex-col items-center gap-4'>
-      <form onSubmit={submitHandler} className='flex flex-col items-center gap-4'>
+    <div className='flex flex-col items-center gap-4 justify-center '>
+      <form onSubmit={submitHandler} className='flex flex-col items-center gap-4 '>
         <input
           type="search"
           value={searchValue}
@@ -62,7 +62,7 @@ const SearchCerti = () => {
       )}
 
       {/* Result Card */}
-      {result && (
+      {/* {result && (
         <div className='bg-white rounded-xl shadow-lg p-6 w-[500px] mt-4 border'>
           <h2 className='text-xl font-bold text-[#1f1f58] mb-4'>Certificate Details</h2>
           <div className='grid grid-cols-2 gap-3 text-sm'>
@@ -114,7 +114,123 @@ const SearchCerti = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
+
+
+      {/* Result Card  */}
+      <div className='cerificate-content bg-[#f1f1f1] md:w-[1200px] rounded-2xl md:p-10 p-4'>
+        {/* Heading  */}
+        <div className='flex justify-center '>
+          <h2 className='text-3xl font-bold'>Verify Certificate</h2>
+        </div>
+        {/* Main Data  */}
+        <div className='flex flex-col gap-4 mt-4'>
+          {/* Data  */}
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Certificate Number:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Date Of Initial Registration:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Date Of Issue:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Date Of Expiry:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Recertification Due Date</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>  
+          <div>
+            <h4 className='text-lg font-bold'>Country:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Standard</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Organization:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Address:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Scope:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+        <div className=' flex justify-between '>
+          <div>
+            <h4 className='text-lg font-bold'>Status:</h4>
+          </div>
+          <div>
+            <p className='text-gray-800'>TSP/PK/EDQMS/11</p>
+          </div>
+
+        </div>
+
+        </div>
+       
+
+      </div>
+
     </div>
   )
 }

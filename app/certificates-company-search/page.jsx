@@ -6,8 +6,12 @@ const page = () => {
   return (
     <div>
       <Header/>
-      <div className='bg-[#85a5ce] h-[250px] flex justify-center items-center'>
+      <div className='bg-[#85a5ce]  min-h-[250px] flex justify-center items-center pt-10 pb-10'>
+        
         <SearchCerti/>
+
+   
+      
       
       </div>
       
