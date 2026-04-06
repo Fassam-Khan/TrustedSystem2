@@ -119,7 +119,7 @@ const SearchCerti = () => {
 
       {/* Result Card  */}
       {result && (
-            <div className='cerificate-content bg-[#f1f1f1] md:w-[1200px] rounded-2xl md:p-10 p-6 w-[120%] '>
+            <div className='cerificate-content bg-[#f1f1f1] md:w-[1200px] rounded-2xl md:p-10 p-6 w-[95%] '>
             {/* Heading  */}
             <div className='flex justify-center '>
               <h2 className='text-3xl font-bold'>Verify Certificate</h2>
