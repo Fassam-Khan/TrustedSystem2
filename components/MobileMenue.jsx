@@ -19,7 +19,7 @@ export function MobileMenue() {
       <DrawerTrigger asChild>
         <Button variant="outline"><Menu/></Button>
       </DrawerTrigger>
-      <DrawerContent className=" bg-white text-black" >
+      <DrawerContent className=" bg-white text-black " >
         <DrawerHeader>
           <DrawerTitle>
           <DrawerClose asChild className="absolute right-[22px]">
@@ -28,7 +28,7 @@ export function MobileMenue() {
           </DrawerTitle>
           <DrawerDescription></DrawerDescription>
         </DrawerHeader>
-        <div className="no-scrollbar overflow-y-auto px-4 mt-10">
+        <div className="no-scrollbar overflow-y-auto px-4 mt-10 ">
          <ul className="flex flex-col gap-10 justify-center text-lg">
             <Link href={'/'}><li>HOME</li></Link>
             <Link href={'/standards'}><li>STANDARDS</li></Link>
