@@ -11,7 +11,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-import { Menu } from "lucide-react"
+import { Menu , X } from "lucide-react"
 
 export function MobileMenue() {
   return (
@@ -23,7 +23,7 @@ export function MobileMenue() {
         <DrawerHeader>
           <DrawerTitle>
           <DrawerClose asChild className="absolute right-[22px]">
-            <Button variant="">Cancel</Button>
+            <Button variant=""><X/></Button>
           </DrawerClose>
           </DrawerTitle>
           <DrawerDescription></DrawerDescription>
